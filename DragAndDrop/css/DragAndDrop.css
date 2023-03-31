@@ -1,0 +1,55 @@
+.SuhiDragAndDropPCF\.DragAndDrop
+{
+    width: 100%;
+    overflow: auto;
+}
+
+.SuhiDragAndDropPCF\.DragAndDrop img {
+    max-width: -webkit-fill-available;
+    min-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.SuhiDragAndDropPCF\.DragAndDrop .status{
+    float: left;
+    border-width: thin;
+    border: groove;
+    padding:1%;
+}
+.SuhiDragAndDropPCF\.DragAndDrop #DargAndDrop{
+    display: flex;
+}
+
+.SuhiDragAndDropPCF\.DragAndDrop #DargAndDrop:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  /* Float four columns side by side */
+  .SuhiDragAndDropPCF\.DragAndDrop .column {
+    float: left;
+    padding: 10px;
+    cursor: move;
+  }
+  
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .SuhiDragAndDropPCF\.DragAndDrop .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .SuhiDragAndDropPCF\.DragAndDrop .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
